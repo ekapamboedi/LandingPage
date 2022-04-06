@@ -1,0 +1,176 @@
+/* Navbar*/
+.navbar{
+  position: relative;
+  z-index: 1;
+  font-family: Fjalla One;
+  }
+.navbar img{
+margin-left: -100px;
+margin-right: 20px;
+width: 45px;
+}
+.nav-bg{
+  color: #222831;
+}
+.navbar-brand{
+  font-family:Dancing Script;
+  font-size: 32px;
+}
+
+/* Jumbotron */
+.jumbotron{
+  background-image: url(../img/jumbotron-bg.jpg);
+  background-size:cover;/*cover value of the bg size*/
+    height: 540px;
+  text-align: center;
+  position: relative;
+}
+
+.jumbotron .container{
+  position: relative;
+  z-index: 1;
+}
+.jumbotron::after{
+  content: '';
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(to top, rgb(0,0,0,1), rgba(0,0,0,0.1) );
+  position: absolute;
+  bottom:0;
+}
+.jumbotron .display-4{
+  color: white;
+  margin-top: 150px;
+  font-weight: 200;
+  text-shadow: 1px 1px 1px rgba(0,0,0,0.7);
+  margin-bottom: 30px;
+  font-size:40px;
+
+}
+.jumbotron .display-4 span{
+  font-weight: 500;
+
+}
+
+/* Info panel */
+  .info-panel{
+    box-shadow: 0 3px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+    margin-top: -100px;
+    background-color: white;
+    padding: 30px;
+  }
+
+  .info-panel img{
+    width: 80px;
+    height: 80px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+  }
+
+  .info-panel h4{
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-top: 5px;
+  }
+
+  .info-panel p{
+    font-size: 14px;
+    color: #acacac;
+    font-weight: 200;
+  }
+
+/* Tables */
+.Tables{
+  margin-top: 120px;
+  text-align: center;
+}
+.Tables h3{
+  font-size: 53px;
+  font-weight: 200;
+  text-transform: uppercase;
+  margin-top: 30px;
+}
+.Tables h3 span{
+  font-weight: 500;
+}
+.Tables p{
+  font-size: 18px;
+  color: #acacac;
+  font-weight: 200;
+  margin: 25px 0;
+}
+
+.Tables img{
+  border-radius: 20px;
+}
+
+.testimonial{
+  margin-top: 100px;
+
+}
+
+.testimonial h5{
+  text-align: center;
+  font-weight: 200;
+  font-style: italic;
+  font-size: 24px;
+}
+
+.footer{
+  margin-top: 100px;
+}
+.footer p{
+  color: #acacac;
+  font-size: 18px;
+}
+.Credit{
+  text-decoration:none;
+  font-weight: lighter;
+  color:#acacac;
+}
+/* Utility */
+.tombol{
+  text-transform: uppercase;
+  border-radius: 50px;
+}
+
+/* DESKTOP VER */
+@media (min-width: 992px) {
+
+  .navbar-brand, .nav-link {
+    color: black !important;
+    /* text-shadow: 1px 1px 1px rgba(0,0,0,0.7); */
+  }
+
+  .nav-link{
+    text-transform: uppercase;/*teransformasi bentuk huruf jdi kapital dll*/
+    margin-right: 30px;
+  }
+  .nav-link:hover::after {
+    content: '';
+    display: block;
+    border-bottom:3px solid #0B63DC;
+    width: 50%;
+    margin: auto;
+    padding-bottom: 5px;
+    margin-bottom: -8px;
+  }
+  .jumbotron{
+    margin-top: -75px;
+    height: 540px;
+  }
+
+  .jumbotron .display-4{
+    font-size: 60px;
+  }
+  .Tables{
+    text-align: left;
+  }
+
+  .testimonial h5{
+    font-size: 32px;
+  }
+}
